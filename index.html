@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maschinenausfall-Kostenrechner · Forbach & Partners</title>
+<meta name="description" content="Berechnen Sie in 3 Minuten die tatsächlichen Ausfallkosten Ihrer CNC-Fräszentren – inklusive Folgekosten, Benchmark und Einsparpotenzial.">
+<meta name="robots" content="index,follow">
+
+<!-- ===== LinkedIn Insight Tag (Partner-ID 10395825) ===== -->
+<script type="text/javascript">
+_linkedin_partner_id = "10395825";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+(function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}
+var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");
+b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b,s);})(window.lintrk);
+</script>
+<noscript><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=10395825&fmt=gif" /></noscript>
+<!-- ===== /Insight Tag ===== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Raleway:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+html,body{background:#000!important;margin:0}
+#mk-page{font-family:'Raleway',sans-serif;color:#fff;background:#000;padding:44px 18px 40px}
+#mk-page *{box-sizing:border-box}
+#mk-page .mk-panel{max-width:760px;margin:0 auto 26px;background:#141414;border:1px solid rgba(228,177,94,.4);padding:34px}
+#mk-hero{text-align:center}
+#mk-hero .mk-badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;color:#e4b15e;border:1px solid rgba(228,177,94,.4);padding:7px 16px;margin-bottom:24px}
+#mk-hero .mk-badge:before{content:"\25CF  ";color:#00e676}
+#mk-hero h1{margin:0 0 18px;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(28px,4.2vw,46px);line-height:1.1;letter-spacing:1px;text-transform:uppercase;color:#fff;-webkit-text-fill-color:#fff}
+#mk-hero h1 em{font-style:normal;color:#e4b15e;-webkit-text-fill-color:#e4b15e}
+#mk-hero p{margin:0 auto;max-width:600px;font-size:16px;line-height:1.7;color:#a0a0a0}
+#mk-hero .mk-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px}
+#mk-hero .mk-stat{flex:1 1 180px;max-width:230px;background:#0a0a0a;border:1px solid rgba(228,177,94,.18);padding:14px 16px}
+#mk-hero .mk-stat b{display:block;font-family:'JetBrains Mono',monospace;font-size:22px;color:#e4b15e}
+#mk-hero .mk-stat span{font-size:11.5px;color:#a0a0a0;letter-spacing:.5px}
+#mk-rechner .mk-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#e4b15e;margin-bottom:8px}
+#mk-rechner h3{margin:0 0 6px;font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;letter-spacing:1px;text-transform:uppercase;color:#fff;-webkit-text-fill-color:#fff}
+#mk-rechner .mk-sub{color:#a0a0a0;font-size:14px;margin-bottom:22px}
+#mk-rechner label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.4px;color:#f8dfa5;margin:15px 0 6px}
+#mk-rechner input,#mk-rechner select{width:100%;padding:12px;border:1px solid rgba(228,177,94,.18);background:#0a0a0a;color:#fff;-webkit-text-fill-color:#fff;font-size:15px;font-family:'JetBrains Mono',monospace;border-radius:0;-webkit-appearance:none}
+#mk-rechner input:focus,#mk-rechner select:focus{outline:none;border-color:#e4b15e}
+#mk-rechner .mk-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+@media(max-width:580px){#mk-rechner .mk-grid{grid-template-columns:1fr}}
+#mk-rechner .mk-ergebnis{margin-top:26px;background:#0a0a0a;border:1px solid rgba(228,177,94,.18);padding:20px}
+#mk-rechner .mk-zeile{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #1a1a1a;font-size:13.5px;color:#a0a0a0}
+#mk-rechner .mk-zeile:last-child{border-bottom:none}
+#mk-rechner .mk-zeile b{font-family:'JetBrains Mono',monospace;color:#fff;-webkit-text-fill-color:#fff;white-space:nowrap}
+#mk-rechner .mk-hero-zahl{margin-top:18px;background:#1a0d0d;border:1px solid rgba(255,56,96,.45);padding:22px 20px;text-align:center}
+#mk-rechner .mk-hero-zahl .mk-cap{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#ff8a9c;text-transform:uppercase}
+#mk-rechner .mk-hero-zahl b{display:block;margin-top:6px;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(34px,6vw,54px);line-height:1;color:#ff3860;-webkit-text-fill-color:#ff3860}
+#mk-rechner .mk-hero-zahl small{display:block;margin-top:8px;font-size:12px;color:#a0a0a0}
+#mk-rechner .mk-hinweis{font-size:11.5px;color:#5a5a5a;margin-top:14px;line-height:1.6}
+/* ===== Locked Benchmark / Einsparpotenzial ===== */
+#mk-lock{max-width:760px;margin:0 auto 26px;background:#141414;border:1px solid rgba(228,177,94,.4);padding:30px 34px}
+#mk-lock .mk-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#e4b15e;margin-bottom:8px}
+#mk-lock h3{margin:0 0 6px;font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;-webkit-text-fill-color:#fff}
+#mk-lock .mk-sub{color:#a0a0a0;font-size:14px;line-height:1.6;margin-bottom:20px}
+#mk-lock .mk-lockgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:580px){#mk-lock .mk-lockgrid{grid-template-columns:1fr}}
+#mk-lock .mk-lockcard{position:relative;background:#0a0a0a;border:1px solid rgba(228,177,94,.18);padding:18px 18px 16px;overflow:hidden}
+#mk-lock .mk-lockcard .mk-lc-cap{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;color:#e4b15e;text-transform:uppercase}
+#mk-lock .mk-lockcard .mk-lc-val{margin-top:8px;font-family:'Oswald',sans-serif;font-weight:700;font-size:30px;color:#fff;-webkit-text-fill-color:#fff;filter:blur(8px);user-select:none}
+#mk-lock .mk-lockcard .mk-lc-sub{margin-top:6px;font-size:11.5px;color:#7a7a7a;filter:blur(3px)}
+#mk-lock .mk-lockcard .mk-lc-badge{position:absolute;top:12px;right:12px;font-size:14px;color:#e4b15e}
+#mk-lock .mk-unlock{margin-top:20px;text-align:center}
+#mk-lock .mk-unlock .mk-u-t{font-family:'Oswald',sans-serif;font-weight:600;font-size:20px;letter-spacing:.6px;text-transform:uppercase;color:#f3ead5;-webkit-text-fill-color:#f3ead5}
+#mk-lock .mk-unlock .mk-u-t em{font-style:normal;color:#e4b15e;-webkit-text-fill-color:#e4b15e}
+#mk-lock .mk-unlock .mk-u-s{margin-top:10px;font-size:14px;color:#a0a0a0;line-height:1.65;max-width:560px;margin-left:auto;margin-right:auto}
+#mk-lock .mk-unlock .mk-u-micro{margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:1px;color:#00e676}
+#mk-lock .mk-unlock .mk-arrow{font-size:22px;color:#e4b15e;margin-top:10px}
+/* ===== Natives Lead-Formular (Web3Forms) ===== */
+#mk-form{max-width:760px;margin:0 auto 26px;background:#141414;border:1px solid rgba(228,177,94,.4);padding:30px 34px}
+#mk-form label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.4px;color:#f8dfa5;margin:15px 0 6px;text-transform:uppercase;font-family:'Raleway',sans-serif}
+#mk-form input{width:100%;padding:13px;border:1px solid rgba(228,177,94,.3);background:#0a0a0a;color:#fff;-webkit-text-fill-color:#fff;font-size:15px;font-family:'JetBrains Mono',monospace;border-radius:0;-webkit-appearance:none}
+#mk-form input:focus{outline:none;border-color:#e4b15e}
+#mk-form input::placeholder{color:#666;-webkit-text-fill-color:#666}
+#mk-form .mk-row{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+@media(max-width:580px){#mk-form .mk-row{grid-template-columns:1fr}}
+#mk-form .mk-submit{display:block;width:100%;margin-top:24px;padding:16px 24px;background:#e4b15e;color:#000;-webkit-text-fill-color:#000;border:none;border-radius:0;font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:16px;cursor:pointer;transition:opacity .2s}
+#mk-form .mk-submit:hover{opacity:.9}
+#mk-form .mk-submit:disabled{opacity:.5;cursor:default}
+#mk-form .mk-msg{margin-top:16px;padding:14px;font-size:13.5px;line-height:1.6;display:none}
+#mk-form .mk-err{border:1px solid rgba(255,56,96,.45);background:#1a0d0d;color:#ff8a9c}
+#mk-form .mk-trust{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:#7a7a7a;text-align:center;line-height:1.7}
+#mk-form .mk-trust .mk-gold{color:#e4b15e;-webkit-text-fill-color:#e4b15e}
+</style>
+</head>
+<body>
+<div id="mk-page">
+
+<div id="mk-hero" class="mk-panel">
+<span class="mk-badge">KOSTENLOSER RECHNER &#183; PRODUKTIONSLEITER &amp; GF</span>
+<h1>Was kostet Sie eine Stunde <em>Maschinen&shy;stillstand</em> wirklich?</h1>
+<p>Berechnen Sie in 3 Minuten die tats&#228;chlichen Ausfallkosten Ihrer CNC-Fr&#228;szentren &#8211; inklusive Folgekosten durch gerissene Liefertermine, Eilzuschl&#228;ge und Spindel-Lieferzeiten.</p>
+<div class="mk-stats">
+<div class="mk-stat"><b>4&#8211;6 Wo.</b><span>Vorwarnzeit Lagersch&#228;den</span></div>
+<div class="mk-stat"><b>&#8364; 684K</b><span>Ersparnis in 12 Monaten*</span></div>
+<div class="mk-stat"><b>95,2 %</b><span>Prognose-Konfidenz</span></div>
+</div>
+</div>
+
+<div id="mk-rechner" class="mk-panel">
+<div class="mk-eyebrow">ROI-KALKULATOR &#183; LIVE</div>
+<h3>Maschinenausfall-Kostenrechner</h3>
+<div class="mk-sub">Tragen Sie Ihre Werte ein &#8211; das Ergebnis erscheint sofort, ohne Anmeldung.</div>
+<div class="mk-grid">
+<div><label>MASCHINENSTUNDENSATZ (&#8364;/H)</label><input type="number" id="mk-satz" value="120" min="10"></div>
+<div><label>DECKUNGSBEITRAG PRO MASCHINENSTUNDE (&#8364;/H)</label><input type="number" id="mk-db" value="80" min="0"></div>
+<div><label>SCHICHTMODELL</label><select id="mk-schicht"><option value="8">1-Schicht (8 h/Tag)</option><option value="16">2-Schicht (16 h/Tag)</option><option value="24" selected>3-Schicht / Geisterschicht (24 h/Tag)</option></select></div>
+<div><label>UNGEPLANTE STILLSTANDSSTUNDEN / JAHR (JE MASCHINE)</label><input type="number" id="mk-stunden" value="60" min="0"></div>
+<div><label>ANZAHL CNC-MASCHINEN</label><input type="number" id="mk-anzahl" value="8" min="1"></div>
+<div><label>FOLGEKOSTEN-ZUSCHLAG</label><select id="mk-zuschlag"><option value="1.3">konservativ (+30 %)</option><option value="1.6" selected>realistisch (+60 %)</option><option value="2">kritische Serienfertigung (+100 %)</option></select></div>
+</div>
+<div class="mk-ergebnis">
+<div class="mk-zeile"><span>Ausfallkosten pro Stunde (inkl. Folgekosten)</span><b id="mk-e-stunde">&#8211;</b></div>
+<div class="mk-zeile"><span>Verlorenes Wochenende (Geisterschicht, 48 h)</span><b id="mk-e-we">&#8211;</b></div>
+<div class="mk-zeile"><span>Szenario Spindelcrash (Austauschspindel + 3 Wo. Lieferzeit)</span><b id="mk-e-spindel">&#8211;</b></div>
+</div>
+<div class="mk-hero-zahl">
+<div class="mk-cap">Jahresrisiko Ihres Maschinenparks</div>
+<b id="mk-e-jahr">&#8211;</b>
+<small>Ungeplante Stillstandskosten pro Jahr &#8211; Geld, das heute ohne Vorwarnung verbrennt.</small>
+</div>
+<div class="mk-hinweis">Rechenbasis: (Maschinenstundensatz + Deckungsbeitrag) &#215; Folgekosten-Zuschlag. Spindelcrash: 25.000 &#8364; Spindel/Service + 21 Tage Stillstand im gew&#228;hlten Schichtmodell. Richtwerte &#8211; individuelle Ergebnisse variieren.</div>
+</div>
+
+<div id="mk-lock">
+<div class="mk-eyebrow">IHR PERS&Ouml;NLICHER BENCHMARK</div>
+<h3>Sie kennen jetzt Ihr Risiko. Zwei Zahlen fehlen noch.</h3>
+<div class="mk-sub">Die Ausfallkosten oben sehen Sie kostenlos. Was Ihre Entscheidung wirklich tr&#228;gt, ist der Vergleich &#8211; und das, was davon vermeidbar ist:</div>
+<div class="mk-lockgrid">
+<div class="mk-lockcard">
+<span class="mk-lc-badge">&#128274;</span>
+<div class="mk-lc-cap">Ihr Benchmark vs. vergleichbare Betriebe</div>
+<div class="mk-lc-val" id="mk-bm-val">+ 41 %</div>
+<div class="mk-lc-sub">Wo Ihr Maschinenpark im Vergleich zu Zerspanungsbetrieben &#228;hnlicher Gr&#246;&#223;e steht.</div>
+</div>
+<div class="mk-lockcard">
+<span class="mk-lc-badge">&#128274;</span>
+<div class="mk-lc-cap">Vermeidbares Einsparpotenzial / Jahr</div>
+<div class="mk-lc-val" id="mk-save-val">&#8364; 000.000</div>
+<div class="mk-lc-sub">Anteil Ihres Jahresrisikos, der mit Zustands&#252;berwachung planbar wird.</div>
+</div>
+</div>
+<div class="mk-unlock">
+<div class="mk-u-t">Benchmark + Einsparpotenzial <em>freischalten</em></div>
+<div class="mk-u-s">Tragen Sie unten Name und E-Mail ein. Sie erhalten sofort Ihren pers&#246;nlichen Report: Benchmark gegen vergleichbare Betriebe, konkretes Einsparpotenzial und die drei Bauteile, die erfahrungsgem&#228;&#223; zuerst ausfallen.</div>
+<div class="mk-u-micro">&#10003; 30 Sekunden &#183; nur Name + E-Mail &#183; kein Anruf-Zwang</div>
+<div class="mk-arrow">&#9660;</div>
+</div>
+</div>
+
+<!-- ===== Natives Lead-Formular: direkt an Web3Forms -> info@forbachandpartners.com ===== -->
+<form id="mk-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="7f37e43d-150e-4ecd-8b4d-b0a79a4bf330">
+<input type="hidden" name="subject" value="&#127919; Neuer Kostenrechner-Lead (LinkedIn CNC)">
+<input type="hidden" name="from_name" value="Maschinenausfall-Kostenrechner">
+<input type="hidden" name="replyto" id="hf-replyto" value="">
+<!-- Rechner-Werte werden beim Absenden automatisch eingetragen -->
+<input type="hidden" name="Jahresrisiko" id="hf-jahr" value="">
+<input type="hidden" name="Einsparpotenzial" id="hf-save" value="">
+<input type="hidden" name="Anzahl_Maschinen" id="hf-anzahl" value="">
+<input type="hidden" name="Schichtmodell" id="hf-schicht" value="">
+<!-- Honeypot gegen Spam -->
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+<div class="mk-row">
+<div><label>Firma *</label><input type="text" name="Firma" placeholder="Max Mustermann GmbH" required></div>
+<div><label>Vorname *</label><input type="text" name="Vorname" placeholder="Max" required></div>
+</div>
+<label>Gesch&#228;ftliche E-Mail *</label>
+<input type="email" name="email" placeholder="name@ihre-firma.de" required>
+
+<button type="submit" class="mk-submit" id="mk-btn">Benchmark + Report jetzt freischalten &#8594;</button>
+
+<div class="mk-msg mk-err" id="mk-error">Senden fehlgeschlagen. Bitte erneut versuchen oder direkt an <b>info@forbachandpartners.com</b> schreiben.</div>
+
+<div class="mk-trust">
+DSGVO-konform &#183; Keine Weitergabe Ihrer Daten &#183; Jederzeit abbestellbar<br>
+<span class="mk-gold">Einstieg &#252;ber ein begleitetes Pilotprogramm m&#246;glich &#183; faire Konditionen &#183; klare Ausstiegsm&#246;glichkeit</span>
+</div>
+</form>
+
+</div>
+
+<script>
+(function(){
+var EUR=String.fromCharCode(8364);
+var f=function(n){return n.toLocaleString('de-DE',{maximumFractionDigits:0})+' '+EUR};
+var ids=['mk-satz','mk-db','mk-schicht','mk-stunden','mk-anzahl','mk-zuschlag'];
+var R={};/* aktuelle Rechenwerte, wird an die Report-Seite uebergeben */
+function calc(){
+var satz=+document.getElementById('mk-satz').value||0,
+db=+document.getElementById('mk-db').value||0,
+schicht=+document.getElementById('mk-schicht').value,
+std=+document.getElementById('mk-stunden').value||0,
+anz=+document.getElementById('mk-anzahl').value||1,
+z=+document.getElementById('mk-zuschlag').value;
+var proStunde=(satz+db)*z;
+var jahr=proStunde*std*anz;
+var weekend=proStunde*Math.min(48,schicht*2);
+var spindel=25000+proStunde*schicht*21;
+R={satz:satz,db:db,schicht:schicht,schichtText:document.getElementById('mk-schicht').options[document.getElementById('mk-schicht').selectedIndex].text,std:std,anz:anz,z:z,proStunde:proStunde,jahr:jahr,save:jahr*0.7,weekend:weekend,spindel:spindel};
+document.getElementById('mk-e-stunde').textContent=f(proStunde);
+document.getElementById('mk-e-we').textContent=f(weekend);
+document.getElementById('mk-e-jahr').textContent=f(jahr);
+document.getElementById('mk-e-spindel').textContent=f(spindel);
+document.getElementById('mk-save-val').textContent=f(jahr*0.7);
+}
+ids.forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc)});
+calc();
+
+/* ---- Formular: native AJAX-Submit an Web3Forms, dann Redirect auf danke.html ---- */
+var form=document.getElementById('mk-form');
+var btn=document.getElementById('mk-btn');
+var errBox=document.getElementById('mk-error');
+form.addEventListener('submit',function(e){
+e.preventDefault();
+errBox.style.display='none';
+/* aktuelle Rechner-Werte in die Hidden-Felder fuer die Lead-Mail schreiben */
+document.getElementById('hf-jahr').value=f(R.jahr);
+document.getElementById('hf-save').value=f(R.save);
+document.getElementById('hf-anzahl').value=R.anz;
+document.getElementById('hf-schicht').value=R.schichtText;
+/* Antwort-Adresse = E-Mail des Interessenten, damit du direkt antworten kannst */
+var em=form.querySelector('[name="email"]');document.getElementById('hf-replyto').value=em?em.value:'';
+/* Eingaben + Name fuer den personalisierten Report auf danke.html merken */
+var rep={};for(var k in R)rep[k]=R[k];
+rep.firma=(form.querySelector('[name="Firma"]')||{}).value||'';
+rep.vorname=(form.querySelector('[name="Vorname"]')||{}).value||'';
+try{sessionStorage.setItem('mk_report',JSON.stringify(rep));}catch(err){}
+btn.disabled=true;btn.textContent='Wird gesendet …';
+var data=new FormData(form);
+fetch('https://api.web3forms.com/submit',{method:'POST',body:data})
+.then(function(r){return r.json();})
+.then(function(json){
+if(json.success){
+/* LinkedIn-Conversion signalisieren (zusaetzlich zum URL-Match auf /danke) */
+if(window.lintrk){window.lintrk('track',{conversion_id:28910809});}
+window.location.href='danke.html';
+}else{throw new Error('fail');}
+})
+.catch(function(){
+btn.disabled=false;btn.textContent='Benchmark + Report jetzt freischalten →';
+errBox.style.display='block';
+});
+});
+})();
+</script>
+<!-- * Beispielrechnung wie auf forbachandpartners.com: 8 CNC-Fraeszentren, 12 Monate Pilotbetrieb -->
+</body>
+</html>
